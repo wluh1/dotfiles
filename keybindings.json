@@ -1,0 +1,59 @@
+[
+  // Terminal
+  { "key": "ctrl+a", "command": "workbench.action.terminal.focusNext", "when": "terminalFocus" },
+  { "key": "ctrl+b", "command": "workbench.action.terminal.focusPrevious", "when": "terminalFocus"},
+  { "key": "ctrl+n", "command": "workbench.action.terminal.new", "when": "terminalFocus" },
+  { "key": "ctrl+q", "command": "workbench.action.terminal.kill", "when": "terminalFocus" },
+
+  {
+    "key": "ctrl+shift+v",
+    "command": "editor.action.clipboardPasteAction"
+  },
+  {
+    "key": "ctrl+v",
+    "command": "-editor.action.clipboardPasteAction"
+  },
+//   {
+//       "key": "backspace",
+//       "command": "deleteLeft",
+//       "when": "textInputFocus && !vim.mode == 'SearchInProgressMode' && !vim.mode == 'CommandlineInProgress'"
+//   },
+  // {
+  //     "key": "backspace",
+  //     "command": "deleteLeft",
+  //     "when": "textInputFocus"
+  // },
+  // {
+  //     "key": "ctrl+r",
+  //     "command": "workbench.action.openRecent",
+  //     "when": "!vim.active"
+  // },
+  // {
+  //     "key": "ctrl+r",
+  //     "command": "-workbench.action.openRecent"
+  // },
+  {
+    "key": "ctrl+shift+c",
+    "command": "-workbench.action.terminal.openNativeConsole",
+    "when": "!terminalFocus"
+  },
+  {
+    "key": "ctrl+shift+c",
+    "command": "editor.action.clipboardCopyAction"
+  },
+  {
+    "key": "ctrl+u",
+    "command": "-cursorUndo",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "ctrl+shift+d",
+    "command": "editor.action.addSelectionToNextFindMatch",
+    "when": "editorFocus"
+  },
+  {
+      "key": "ctrl+d",
+      "command": "-editor.action.addSelectionToNextFindMatch",
+      "when": "editorFocus"
+  }
+]
