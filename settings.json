@@ -46,6 +46,8 @@
     { "before": ["g", "h"], "commands": ["editor.action.showDefinitionPreviewHover"] },
     { "before": ["<"], "commands": ["editor.action.outdentLines"] },
     { "before": [">"], "commands": ["editor.action.indentLines"] },
+
+    { "before": ["leader", "d"], "commands": ["editor.action.showDefinitionPreviewHover"]},
   ],
   "vim.insertModeKeyBindings": [
     { "before": ["j", "j"], "after": ["<Esc>"] }
