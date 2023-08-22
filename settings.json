@@ -91,5 +91,6 @@
       "source.organizeImports": true
     },
     "editor.suggest.snippetsPreventQuickSuggestions": false
-  }
+  },
+  "files.trimTrailingWhitespace": true
 }
